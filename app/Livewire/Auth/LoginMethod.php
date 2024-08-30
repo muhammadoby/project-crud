@@ -5,6 +5,7 @@ namespace App\Livewire\Auth;
 use Illuminate\Support\Facades\Auth;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
 use Livewire\Component;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class LoginMethod extends Component
 {
@@ -23,7 +24,8 @@ class LoginMethod extends Component
         ]);
 
         if (Auth::attempt(['email' => $this->email, 'password' => $this->password], $this->remember)) {
-            return redirect()->intended(route('home'));
+            Alert::success('Success', 'Anda berhasil login');
+            return redirect()->intended(route('dashboard'));
         }else{
             $this->alert('error', 'Invalid email or password');
         }

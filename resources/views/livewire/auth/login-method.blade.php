@@ -39,7 +39,7 @@ mb-4">
 
         <div class="d-md-flex justify-content-between mt-4">
             <div>
-                <a href="forget-password.html" class="text-inherit
+                <a href="{{route('password.request')}}" class="text-inherit
 fs-5">Forgot your password?</a>
             </div>
 
