@@ -35,136 +35,29 @@
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-12">
                         <!-- Page header -->
-                        <div class="mb-5">
-                            <h3 class="mb-0">Menu</h3>
+                        <div class="d-flex justify-content-between align-items-center mb-5">
+                            <h3 class="mb-0 ">Dashboard</h3>
                         </div>
                     </div>
                 </div>
-                <div>
-                    <!-- row -->
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="card">
-                                <div class="card-header d-md-flex border-bottom-0">
-                                    <div class="flex-grow-1">
-                                        <a href="#!" data-bs-toggle="modal" data-bs-target="#addMenu"
-                                            class="btn btn-primary">+ Tambah Menu</a>
-                                    </div>
-
-                                    <!-- Modal -->
-                                    <div class="modal fade" id="addMenu" tabindex="-1" role="dialog"
-                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                        <div class="modal-dialog" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                        aria-label="Close">
-                                                        <span aria-hidden="true">&times;</span>
-                                                    </button>
-                                                </div>
-                                                <div class="modal-body">
-                                                    ...
-                                                </div>
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-secondary"
-                                                        data-bs-dismiss="modal">Close</button>
-                                                    <button type="button" class="btn btn-primary">Save changes</button>
-                                                </div>
-                                            </div>
-                                        </div>
+                <div class="bg-primary rounded-3">
+                    <div class="row mb-5 ">
+                        <div class="col-lg-12 col-md-12 col-12">
+                            <div class="p-6 d-lg-flex justify-content-between align-items-center ">
+                                <div class="d-md-flex align-items-center">
+                                    <img src="https://i2.wp.com/vdostavka.ru/wp-content/uploads/2019/05/no-avatar.png?fit=512%2C512&ssl=1" alt="Image"
+                                        class="rounded-circle avatar avatar-xl">
+                                    <div class="ms-md-4 mt-3 mt-md-0 lh-1">
+                                        <h3 class="text-white mb-0">{{ $greeting }}, {{ auth()->user()->name }}</h3>
+                                        <small class="text-white"> Here is what’s happening with your projects
+                                            today:</small>
                                     </div>
                                 </div>
-                                <div class="card-body">
-                                    <div class="table-responsive table-card">
-                                        <table id="example" class="table text-nowrap table-centered mt-0"
-                                            style="width: 100%">
-                                            <thead class="table-light">
-                                                <tr>
-                                                    <th class="pe-0">
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" value=""
-                                                                id="checkAll">
-                                                            <label class="form-check-label" for="checkAll">
-                                                            </label>
-                                                        </div>
-                                                    </th>
-                                                    <th class="ps-1">Name</th>
-                                                    <th>Category</th>
-                                                    <th>Added Date</th>
-                                                    <th>Price</th>
-                                                    <th>Quantity</th>
-                                                    <th>Status</th>
-                                                    <th>Action</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td class="pe-0">
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" value=""
-                                                                id="contactCheckbox2">
-                                                            <label class="form-check-label" for="contactCheckbox2">
-                                                            </label>
-                                                        </div>
-                                                    </td>
-                                                    <td class="ps-0">
-                                                        <div class="d-flex align-items-center">
-                                                            <img src="../assets/images/ecommerce/product-1.jpg"
-                                                                alt="" class="img-4by3-sm rounded-3">
-                                                            <div class="ms-3">
-                                                                <h5 class="mb-0">
-                                                                    <a href="#!" class="text-inherit">Women Shoes</a>
-                                                                </h5>
-                                                                <span class="text-warning">
-                                                                    <i class="mdi mdi-star"> </i>
-                                                                    <i class="mdi mdi-star ms-n1"> </i>
-                                                                    <i class="mdi mdi-star ms-n1"> </i>
-                                                                    <i class="mdi mdi-star ms-n1"> </i>
-                                                                    <i class="mdi mdi-star ms-n1"> </i>
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td>Accessories</td>
-                                                    <td>19 July, 2023</td>
-                                                    <td>$65.29</td>
-                                                    <td>235</td>
-                                                    <td>
-                                                        <span class="badge badge-success-soft">Active</span>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#!"
-                                                            class="btn btn-ghost btn-icon btn-sm rounded-circle texttooltip"
-                                                            data-template="eyeOne">
-                                                            <i data-feather="eye" class="icon-xs"></i>
-                                                            <div id="eyeOne" class="d-none">
-                                                                <span>View</span>
-                                                            </div>
-                                                        </a>
-                                                        <a href="#!"
-                                                            class="btn btn-ghost btn-icon btn-sm rounded-circle texttooltip"
-                                                            data-template="editOne">
-                                                            <i data-feather="edit" class="icon-xs"></i>
-                                                            <div id="editOne" class="d-none">
-                                                                <span>Edit</span>
-                                                            </div>
-                                                        </a>
-                                                        <a href="#!"
-                                                            class="btn btn-ghost btn-icon btn-sm rounded-circle texttooltip"
-                                                            data-template="trashOne">
-                                                            <i data-feather="trash-2" class="icon-xs"></i>
-                                                            <div id="trashOne" class="d-none">
-                                                                <span>Delete</span>
-                                                            </div>
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
+                                <div class="d-none d-lg-block">
+                                    <a href="#!" class="btn btn-white">👋</a>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </div>

@@ -64,7 +64,7 @@
                                     Setel Ulang Kata Sandi
                                 </button>
                             </div>
-                            <span>Sudah ingat kata sandi? <a href="sign-in.html">Masuk</a></span>
+                            <span>Sudah ingat kata sandi? <a href="{{ route('login') }}">Masuk</a></span>
                         </form>
                     </div>
                 </div>

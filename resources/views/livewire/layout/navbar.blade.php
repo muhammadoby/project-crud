@@ -39,7 +39,7 @@
 
                             <div class="lh-1 ">
                                 <h5 class="mb-1"> {{ auth()->user()->name }}</h5>
-                                <a href="#!" class="text-inherit fs-6">View my profile</a>
+                                <a href="#!" class="text-inherit fs-6">Kunjungi profil saya</a>
                             </div>
                             <div class=" dropdown-divider mt-3 mb-2"></div>
                         </div>
@@ -48,14 +48,12 @@
 
                             <li>
                                 <a class="dropdown-item d-flex align-items-center" href="#!">
-                                    <i class="me-2 icon-xxs dropdown-item-icon" data-feather="user"></i>Edit
-                                    Profile
+                                    <i class="me-2 icon-xxs dropdown-item-icon" data-feather="user"></i>Ubah Profil
                                 </a>
                             </li>
                             <li>
                                 <a class="dropdown-item" href="#!">
-                                    <i class="me-2 icon-xxs dropdown-item-icon" data-feather="activity"></i>Activity
-                                    Log
+                                    <i class="me-2 icon-xxs dropdown-item-icon" data-feather="activity"></i>Log Aktivitas
                                 </a>
 
 
@@ -65,13 +63,12 @@
                             <li>
                                 <a class="dropdown-item d-flex align-items-center" href="#!">
 
-                                    <i class="me-2 icon-xxs dropdown-item-icon" data-feather="settings"></i>Settings
+                                    <i class="me-2 icon-xxs dropdown-item-icon" data-feather="settings"></i>Pengaturan
                                 </a>
                             </li>
                             <li>
                                 <a class="dropdown-item" wire:click="logout" wire:confirm="Apakah anda yakin ingin mengakhiri sesi anda?">
-                                    <i class="me-2 icon-xxs dropdown-item-icon" data-feather="power"></i>Sign
-                                    Out
+                                    <i class="me-2 icon-xxs dropdown-item-icon" data-feather="power"></i>Keluar
                                 </a>
                             </li>
                         </ul>
