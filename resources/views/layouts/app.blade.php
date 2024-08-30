@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
-<!-- Mirrored from dashui.codescandy.com/dashuipro/pages/dashboard-ecommerce.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 23 Nov 2023 08:38:32 GMT -->
-
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">

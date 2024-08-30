@@ -29,7 +29,7 @@
                     <a class="rounded-circle" href="#!" role="button" id="dropdownUser" data-bs-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">
                         <div class="avatar avatar-md avatar-indicators avatar-online">
-                            <img alt="avatar" src="{{ asset('assets/images/avatar/avatar-11.jpg') }}"
+                            <img alt="avatar" src="https://i2.wp.com/vdostavka.ru/wp-content/uploads/2019/05/no-avatar.png?fit=512%2C512&ssl=1"
                                 class="rounded-circle">
                         </div>
                     </a>
