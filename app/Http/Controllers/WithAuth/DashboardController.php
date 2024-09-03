@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\WithAuth;
 
 use App\Http\Controllers\Controller;
+use App\Models\Menu;
 use App\Models\User;
 use Illuminate\Http\Request;
 
@@ -23,9 +24,8 @@ class DashboardController extends Controller
         } else {
             $greeting = 'Selamat Malam';
         }
-        return view('dashboard', [
+        return view('page.dashboard.dashboard', [
             'greeting' => $greeting,
-            'users' => User::get(),
         ]);
     }
 }
