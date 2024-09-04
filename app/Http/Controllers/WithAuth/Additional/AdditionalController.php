@@ -1,23 +1,22 @@
 <?php
 
-namespace App\Http\Controllers\WithAuth\Menu;
+namespace App\Http\Controllers\WithAuth\Additional;
 
-use App\Models\Menu;
 use App\Models\Variant;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Models\Additional;
 use RealRashid\SweetAlert\Facades\Alert;
 
-class VariantController extends Controller
+class AdditionalController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('page.variant.variant', [
-            'title' => 'Variant Menu',
-            'variants' => Variant::get(),
+        return view('page.additional.additional', [
+            'title' => 'Additional',
         ]);
     }
 
@@ -58,23 +57,23 @@ class VariantController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        return dd($request->all());
         $request->validate([
-            'name' => 'required|unique:variants,name,' . $id,
+            'name' => 'required',
+            'description' => 'required',
             'status' => 'required|boolean',
         ]);
 
-        try{
-            $menu = Variant::findOrFail($id);
+        try {
+            $menu = Additional::findOrFail($id);
             $menu->update([
                 'name' => $request->name,
                 'description' => $request->description,
                 'is_active' => $request->status,
             ]);
-            Alert::success('Success', 'Berhasil mengubah data');
+            Alert::success('Success', 'Berhasil mengubah data varian');
             return back();
         } catch (\Exception $e) {
-            Alert::error('Error', 'Gagal mengubah data');
+            Alert::error('Error', 'Gagal mengubah data varian');
             return back();
         }
     }

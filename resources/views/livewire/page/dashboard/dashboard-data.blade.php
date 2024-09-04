@@ -81,7 +81,7 @@ mb-3">
                 <div class="d-flex justify-content-between align-items-center
 mb-3">
                     <div>
-                        <h4 class="mb-0">Productivity</h4>
+                        <h4 class="mb-0">Additional</h4>
                     </div>
                     <div
                         class="icon-shape icon-md bg-primary-soft text-primary
@@ -91,7 +91,7 @@ mb-3">
                 </div>
                 <!-- project number -->
                 <div class="lh-1">
-                    <h1 class="  mb-1 fw-bold">76%</h1>
+                    <h1 class="  mb-1 fw-bold">{{ number_format($additionals->count(), 0, ',', '.') }}</h1>
                     <p class="mb-0"><span class="text-success me-2">5%</span>Completed</p>
                 </div>
             </div>

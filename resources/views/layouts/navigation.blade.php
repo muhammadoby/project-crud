@@ -29,6 +29,12 @@
                 </a>
             </li>
             <li class="nav-item">
+                <a class="nav-link {{ Route::is('additional.index') ? 'active' : '' }}" href="{{ route('additional.index') }}">
+                    <i data-feather="menu" class="nav-icon me-2 icon-xxs"></i>
+                    Additional
+                </a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link {{ Route::is('variant.index') ? 'active' : '' }}" href="{{ route('variant.index') }}">
                     <i data-feather="menu" class="nav-icon me-2 icon-xxs"></i>
                     Varian
